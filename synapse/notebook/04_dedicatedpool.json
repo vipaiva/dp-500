@@ -20,7 +20,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "c31d5818-88f2-4fb8-8694-e9bc0f779e25"
+				"spark.autotune.trackingId": "e258bd87-d5e5-47c6-9583-046c2d254454"
 			}
 		},
 		"metadata": {
@@ -34,10 +34,10 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-500-platform/providers/Microsoft.Synapse/workspaces/synapse-cn32xts6vteh6/bigDataPools/synapsespark",
+				"id": "/subscriptions/073a4913-dc63-46b9-b676-fad837dab1ba/resourceGroups/rg-dp-500-platform/providers/Microsoft.Synapse/workspaces/synapse-6oq3z6xmzhbbc/bigDataPools/synapsespark",
 				"name": "synapsespark",
 				"type": "Spark",
-				"endpoint": "https://synapse-cn32xts6vteh6.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/synapsespark",
+				"endpoint": "https://synapse-6oq3z6xmzhbbc.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/synapsespark",
 				"auth": {
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
@@ -82,7 +82,7 @@
 				"source": [
 					"from pyspark.sql import types\r\n",
 					"\r\n",
-					"datalake = 'datalakecn32xts6vteh6'\r\n",
+					"datalake = 'datalake6oq3z6xmzhbbc'\r\n",
 					"\r\n",
 					"customSchema = types.StructType([\r\n",
 					"    types.StructField(\"SalesOrderNumber\", types.StringType(), True),\r\n",
