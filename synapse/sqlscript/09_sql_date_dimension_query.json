@@ -1,0 +1,17 @@
+{
+	"name": "09_sql_date_dimension_query",
+	"properties": {
+		"content": {
+			"query": " SELECT MIN(DateAltKey), MAX(DateAltKey)  FROM [dbo].[DimDate]\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "DP500DWH",
+				"poolName": "DP500DWH"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
