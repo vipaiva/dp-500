@@ -16,10 +16,6 @@
 				{
 					"Name": "TransactionId",
 					"Description": "The unique identifier of a Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionInitiatedTimestamp",
 					"Description": "The timestamp the transaction was initiated.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionInitiatedTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -45,16 +41,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionInitiatedTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionCompletedTimestamp",
 					"Description": "The timestamp that the transaction was completed or closed.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionCompletedTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -63,16 +59,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionCompletedTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionReceivedTimestamp",
 					"Description": "The timestamp that the Transaction was received.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionReceivedTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -81,16 +77,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionReceivedTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionEntryTimestamp",
 					"Description": "The timestamp that the Transaction was entered into the appropriate system for processing.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionEntryTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -99,16 +95,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionEntryTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionConfirmationTimestamp",
 					"Description": "The timestamp that the Transaction was confirmed to the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionConfirmationTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -117,16 +113,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionConfirmationTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CreditCheckTimestamp",
 					"Description": "The timestamp that the Customer/Customer Account had a credit check in regard to the Transaction amount.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CreditCheckTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -135,16 +131,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CreditCheckTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "RequestedDeliveryDate",
 					"Description": "The date that the Customer/Customer Account requested delivery of the items.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "RequestedDeliveryDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -153,16 +149,16 @@
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "RequestedDeliveryDate"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CommittedDeliveryDate",
 					"Description": "The date committed to the Customer/Customer Account for delivery of the items.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CommittedDeliveryDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -172,15 +168,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CommittedDeliveryDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ActualDeliveryTimestamp",
 					"Description": "The actual timestamp of delivery of the items to the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ActualDeliveryTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -189,16 +185,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ActualDeliveryTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DeliveryConfirmationTimestamp",
 					"Description": "The timestamp that confirmation of the delivery or Shipment was made to the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "DeliveryConfirmationTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -208,15 +204,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "DeliveryConfirmationTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionAmount",
 					"Description": "The amount associated with the transaction.\n\nEx:\nRefund = 'amount'\nCredit = 'amount'",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -227,15 +223,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionAmount"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipmentToName",
 					"Description": "The name of the ship-to party.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ShipmentToName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -245,15 +241,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ShipmentToName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipmentToLocationId",
 					"Description": "The unique identifier of a Location.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ShipmentToLocationId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -262,15 +258,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ShipmentToLocationId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionConfirmationNumber",
 					"Description": "The transaction confirmation number provided to confirm that the transaction was executed.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionConfirmationNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -280,15 +276,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionConfirmationNumber"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "IdentificationCheckedIndicator",
 					"Description": "Indicates whether the individual's identification was checked for any requirements for the transaction. For example: The individual is 21 years of age or older in order to purchase alcohol products.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "IdentificationCheckedIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -296,16 +292,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "IdentificationCheckedIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "IdentificationId",
 					"Description": "The unique identifier of the identification.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "IdentificationId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -313,16 +309,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "IdentificationId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalRetailPriceAmount",
 					"Description": "The total list price value of the Transaction products = (list price per unit product price)x(quantity ordered) for each line item.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalRetailPriceAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -332,16 +328,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalRetailPriceAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalAdjustmentPercentage",
 					"Description": "The total percentage of adjustment(s) applied to the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalAdjustmentPercentage"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -351,16 +347,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalAdjustmentPercentage"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalAdjustmentAmount",
 					"Description": "The total amount of adjustments applied to the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalAdjustmentAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -370,16 +366,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalAdjustmentAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalTransactionSalesPriceAmount",
 					"Description": "The total actual price value of the transaction item(s) = (actual selling price per unit product price)x(quantity) for each line item.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalTransactionSalesPriceAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -389,16 +385,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalTransactionSalesPriceAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalShippingChargeAmount",
 					"Description": "The total amount of shipping charge associated with the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalShippingChargeAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -408,16 +404,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalShippingChargeAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionTotalTaxAmount",
 					"Description": "The total amount of all taxes applied to the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionTotalTaxAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -427,16 +423,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionTotalTaxAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionRoundingAmount",
 					"Description": "The amount of rounding applied to the transaction. This is typically done when the payment method is cash and the total invoice amount is rounded to an amount that is payable using legal tender. (e.g. 1 cent coin is no longer in legal circulation.)",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionRoundingAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -446,16 +442,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionRoundingAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionTotalInvoicedAmount",
 					"Description": "The total invoiced amount to the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionTotalInvoicedAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -465,16 +461,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionTotalInvoicedAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalCommissionsPayableAmount",
 					"Description": "The total amount of commissions payable and due in regard to the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalCommissionsPayableAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -485,15 +481,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalCommissionsPayableAmount"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SplitCommissionsIndicator",
 					"Description": "Indicates that the commissions are to be split between two or more employees.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "SplitCommissionsIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -501,16 +497,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "SplitCommissionsIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "RequestedShipmentCarrierName",
 					"Description": "The name of the Carrier for the Shipment requested by the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "RequestedShipmentCarrierName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -519,16 +515,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "RequestedShipmentCarrierName"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AlternateCarrierAcceptableIndicator",
 					"Description": "Indicates that an alternate Carrier of the Shipment would be acceptable to the Customer/Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "AlternateCarrierAcceptableIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -536,16 +532,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "AlternateCarrierAcceptableIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipCompleteIndicator",
 					"Description": "Indicates that the Transaction item(s) are only to be shipped when complete - no partial shipments.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ShipCompleteIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -553,16 +549,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ShipCompleteIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AcknowledgementRequiredIndicator",
 					"Description": "Indicates that an acknowledgement  to the Customer/Customer Account is required for the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "AcknowledgementRequiredIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -570,16 +566,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "AcknowledgementRequiredIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ExpediteTransactionIndicator",
 					"Description": "Indicates that the Transaction is to be expedited.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ExpediteTransactionIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -587,16 +583,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ExpediteTransactionIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DropShipmentIndicator",
 					"Description": "Indicates that the Transaction item(s) are to be drop shipped.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "DropShipmentIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -605,15 +601,15 @@
 							"HIVE_TYPE_STRING": "boolean"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "DropShipmentIndicator"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ActualShipmentCarrierName",
 					"Description": "The Carrier of the Shipment.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ActualShipmentCarrierName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -623,15 +619,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ActualShipmentCarrierName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalWeight",
 					"Description": "The total weight of the Transaction item(s).",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalWeight"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -642,15 +638,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalWeight"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TotalFreightChargeAmount",
 					"Description": "The total freight charges amount.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TotalFreightChargeAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -661,15 +657,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TotalFreightChargeAmount"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "UnitOfMeasureId",
 					"Description": "The unique identifier of a Unit Of Measure.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "UnitOfMeasureId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -677,16 +673,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "UnitOfMeasureId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "EarliestDeliveryWindowTimestamp",
 					"Description": "The earliest timestamp that the transaction should be made available for delivery.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "EarliestDeliveryWindowTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -695,16 +691,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "EarliestDeliveryWindowTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LatestDeliveryWindowTimestamp",
 					"Description": "The latest timestamp that the transaction should be made available for delivery.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "LatestDeliveryWindowTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -714,15 +710,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "LatestDeliveryWindowTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DeliveryInstructions",
 					"Description": "Instructions related to the delivery of the Transaction item(s).",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "DeliveryInstructions"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -731,16 +727,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "DeliveryInstructions"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerCreditCheckNote",
 					"Description": "A note, comment or additional information regarding the Transaction credit check.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CustomerCreditCheckNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -749,16 +745,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CustomerCreditCheckNote"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "MessageToCustomer",
 					"Description": "A message to the Customer/Customer Account regarding the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "MessageToCustomer"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -768,15 +764,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "MessageToCustomer"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -784,16 +780,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CustomerId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerAccountId",
 					"Description": "The unique identifier of a Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CustomerAccountId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -802,15 +798,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CustomerAccountId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PurchasingChannelId",
 					"Description": "The unique identifier of a Channel.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "PurchasingChannelId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -818,16 +814,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "PurchasingChannelId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SalesChannelId",
 					"Description": "The unique identifier of a Channel.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "SalesChannelId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -835,16 +831,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "SalesChannelId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DistributionChannelId",
 					"Description": "The unique identifier of a Channel.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "DistributionChannelId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -852,16 +848,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "DistributionChannelId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "MarketingEventId",
 					"Description": "The unique identifier of a Marketing Event.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "MarketingEventId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -869,16 +865,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "MarketingEventId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AdvertisingEventId",
 					"Description": "The unique identifier of an Advertising Event.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "AdvertisingEventId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -886,16 +882,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "AdvertisingEventId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PromotionId",
 					"Description": "The unique identifier of a Promotion.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "PromotionId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -904,15 +900,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "PromotionId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PartialReturnIndicator",
 					"Description": "Indicates that only a part of the original transaction was returned or refunded.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "PartialReturnIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -921,15 +917,15 @@
 							"HIVE_TYPE_STRING": "boolean"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "PartialReturnIndicator"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionTypeId",
 					"Description": "The unique identifier of a Transaction Type.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -937,16 +933,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionTypeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "BillingCycleId",
 					"Description": "The unique identifier of a Billing Cycle.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "BillingCycleId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -954,16 +950,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "BillingCycleId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "MerchantId",
 					"Description": "The unique identifier of a Merchant.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "MerchantId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -971,16 +967,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "MerchantId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerIdentificationMethodId",
 					"Description": "The unique identifier of a customer identification method.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "CustomerIdentificationMethodId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -988,16 +984,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "CustomerIdentificationMethodId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionClassificationId",
 					"Description": "The unique identifier of an Transaction Classification.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionClassificationId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1005,16 +1001,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionClassificationId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionProcessingStatusId",
 					"Description": "The unique identifier of a Transaction Processing Status.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionProcessingStatusId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1023,15 +1019,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionProcessingStatusId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "IsoCurrencyCode",
 					"Description": "The ISO 4217 currency code.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "IsoCurrencyCode"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -1041,15 +1037,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "IsoCurrencyCode"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionExecutionMethodId",
 					"Description": "The unique identifier of a Transaction Execution Type.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionExecutionMethodId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1057,16 +1053,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionExecutionMethodId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionPriorityId",
 					"Description": "The unique identifier of a Transaction Priority.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionPriorityId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1074,16 +1070,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionPriorityId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionTaxStatusId",
 					"Description": "The unique identifier of a Transaction Tax Status.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionTaxStatusId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1092,15 +1088,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionTaxStatusId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "WebpageUrl",
 					"Description": "The unique address of any Web document.\n\nThe URL consists of:\nType of file (ex: http://)\nDomain name (ex: www. name.com)\nPath or directory to file (ex: /notes/internet)\nName of file (...name.html)",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "WebpageUrl"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -1110,15 +1106,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "WebpageUrl"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SessionId",
 					"Description": "The unique identifier of a Session.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "SessionId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -1126,16 +1122,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "SessionId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "WorkstationSessionId",
 					"Description": "The unique identifier of a Workstation Session.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "WorkstationSessionId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -1144,15 +1140,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "WorkstationSessionId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PointOfSaleId",
 					"Description": "The unique identifier of a POS.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "PointOfSaleId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1160,16 +1156,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "PointOfSaleId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "StoreId",
 					"Description": "The unique identifier of a Store.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "StoreId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1177,16 +1173,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "StoreId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "WarehouseId",
 					"Description": "The unique identifier of a Warehouse.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "WarehouseId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1194,16 +1190,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "WarehouseId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ResponsibilityCenterId",
 					"Description": "The unique identifier of a Responsibility Center.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ResponsibilityCenterId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1212,15 +1208,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ResponsibilityCenterId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "TransactionNote",
 					"Description": "A note, comment or additional information regarding the Transaction.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "TransactionNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -1230,15 +1226,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "TransactionNote"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipmentMethodId",
 					"Description": "The unique identifier of a Shipment Method.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ShipmentMethodId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1246,16 +1242,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ShipmentMethodId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DeviceId",
 					"Description": "The unique identifier of a Device.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "DeviceId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -1263,16 +1259,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "DeviceId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SoftwareProductId",
 					"Description": "The unique identifier of a software product.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "SoftwareProductId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -1281,15 +1277,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "SoftwareProductId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SoftwareProductVersionNumber",
 					"Description": "The version number of the software product.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "SoftwareProductVersionNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1297,16 +1293,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "SoftwareProductVersionNumber"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ApprovedByEmployeeId",
 					"Description": "The unique identifier of an Employee.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "ApprovedByEmployeeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1314,16 +1310,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "ApprovedByEmployeeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PromotionOfferId",
 					"Description": "The unique identifier of a Promotion Offer. The Promotion Offer ID is unique to each account or party that is offered to.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "PromotionOfferId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1331,16 +1327,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "PromotionOfferId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyCardId",
 					"Description": "The unique identifier of a Loyalty Card.",
-					"BaseAttributeReference": {
-						"Entity": "Transaction.cdm.json/Transaction",
-						"Name": "LoyaltyCardId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -1348,6 +1344,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Transaction.cdm.json/Transaction",
+						"Name": "LoyaltyCardId"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -1383,8 +1383,7 @@
 			"Description": "The lowest level of executable work or customer activity.\n\nA transaction consists of one or more discrete events.",
 			"DisplayFolderInfo": "{\"name\":\"Transaction\",\"colorCode\":\"#961E84\"}",
 			"PrimaryKeys": "TransactionId",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

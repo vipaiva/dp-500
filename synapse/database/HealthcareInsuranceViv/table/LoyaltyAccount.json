@@ -16,10 +16,6 @@
 				{
 					"Name": "LoyaltyProgramId",
 					"Description": "The unique identifier of a Loyalty Program.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyProgramId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -27,16 +23,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyProgramId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountId",
 					"Description": "The unique identifier of a Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -45,15 +41,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountEstablishmentTimestamp",
 					"Description": "The timestamp that the loyalty account was established.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountEstablishmentTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -62,16 +58,16 @@
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountEstablishmentTimestamp"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountCancellationTimestamp",
 					"Description": "The timestamp that the loyalty account was cancelled.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountCancellationTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -81,15 +77,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountCancellationTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountHolderFirstName",
 					"Description": "The first name of the loyalty account holder.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountHolderFirstName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -98,16 +94,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountHolderFirstName"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountHolderMiddleName",
 					"Description": "The middle name of the loyalty account holder.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountHolderMiddleName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -116,16 +112,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountHolderMiddleName"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountHolderLastName",
 					"Description": "The last name of the loyalty account holder.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountHolderLastName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -135,15 +131,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountHolderLastName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountHolderTitle",
 					"Description": "The title of the loyalty account holder.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountHolderTitle"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -153,15 +149,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountHolderTitle"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountExpirationDate",
 					"Description": "The expiration date of a Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountExpirationDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -171,15 +167,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountExpirationDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountStreetAddress",
 					"Description": "The address associated with the Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountStreetAddress"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -189,15 +185,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountStreetAddress"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountCity",
 					"Description": "The city associated with the Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountCity"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -207,15 +203,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountCity"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountState",
 					"Description": "The state associated with the Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountState"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -224,16 +220,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountState"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountCountry",
 					"Description": "The country associated with the  Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountCountry"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -243,15 +239,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountCountry"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountPostalCode",
 					"Description": "The postal code associated with the Loyalty Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountPostalCode"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -261,15 +257,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountPostalCode"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountPhoneContactNumber",
 					"Description": "The phone number associated with the loyalty account contact.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountPhoneContactNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -277,16 +273,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountPhoneContactNumber"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountMobilePhoneContactNumber",
 					"Description": "The mobile phone number associated with the loyalty account contact.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountMobilePhoneContactNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -294,16 +290,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountMobilePhoneContactNumber"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountEmailAddress",
 					"Description": "The email address associated with the loyalty account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountEmailAddress"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -312,16 +308,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountEmailAddress"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountEmergencyContactName",
 					"Description": "The name of the loyalty account emergency account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountEmergencyContactName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -330,16 +326,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountEmergencyContactName"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountEmergencyContactEmailAddress",
 					"Description": "The email address associated with the loyalty account emergency contact.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountEmergencyContactEmailAddress"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -349,15 +345,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountEmergencyContactEmailAddress"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LoyaltyAccountTypeId",
 					"Description": "The unique identifier of  the Loyalty Account Type.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "LoyaltyAccountTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -365,16 +361,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "LoyaltyAccountTypeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -382,16 +378,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "CustomerId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerAccountId",
 					"Description": "The unique identifier of a Customer Account.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "CustomerAccountId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -399,16 +395,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "CustomerAccountId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PartyId",
 					"Description": "The unique identifier of a Party.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "PartyId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -416,16 +412,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "PartyId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "HouseholdId",
 					"Description": "The unique identifier of a Household.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "HouseholdId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -433,16 +429,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "HouseholdId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "HouseholdMemberPartyId",
 					"Description": "The unique identifier of a Party.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "HouseholdMemberPartyId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -451,15 +447,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "HouseholdMemberPartyId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SignUpChannelId",
 					"Description": "The unique identifier of a Channel.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "SignUpChannelId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -467,16 +463,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "SignUpChannelId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SignUpStoreId",
 					"Description": "The unique identifier of a Store.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "SignUpStoreId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -484,16 +480,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "SignUpStoreId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PrimaryStoreId",
 					"Description": "The unique identifier of a Store.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "PrimaryStoreId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -501,16 +497,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "PrimaryStoreId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "SecondaryStoreId",
 					"Description": "The unique identifier of a Store.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "SecondaryStoreId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -519,15 +515,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "SecondaryStoreId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CouponUserIndicator",
 					"Description": "Indicates that the loyalty account utilizes coupons that are provided.",
-					"BaseAttributeReference": {
-						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
-						"Name": "CouponUserIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -535,6 +531,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "LoyaltyAccount.cdm.json/LoyaltyAccount",
+						"Name": "CouponUserIndicator"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -570,8 +570,7 @@
 			"Description": "A program offered by a company to customers that make frequent purchases or transactions with that company.",
 			"DisplayFolderInfo": "{\"name\":\"Loyalty\",\"colorCode\":\"#0050AC\"}",
 			"PrimaryKeys": "LoyaltyProgramId,LoyaltyAccountId",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

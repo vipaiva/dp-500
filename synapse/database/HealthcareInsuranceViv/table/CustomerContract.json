@@ -16,10 +16,6 @@
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerContract.cdm.json/CustomerContract",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerContract.cdm.json/CustomerContract",
+						"Name": "CustomerId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ContractId",
 					"Description": "The unique identifier of a Contract.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerContract.cdm.json/CustomerContract",
-						"Name": "ContractId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -45,15 +41,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerContract.cdm.json/CustomerContract",
+						"Name": "ContractId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodStartDate",
 					"Description": "The period start date the customer-contract relationship is effective.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerContract.cdm.json/CustomerContract",
-						"Name": "PeriodStartDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -63,15 +59,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerContract.cdm.json/CustomerContract",
+						"Name": "PeriodStartDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodEndDate",
 					"Description": "The period end date the customer-contract relationship is effective.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerContract.cdm.json/CustomerContract",
-						"Name": "PeriodEndDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -81,15 +77,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerContract.cdm.json/CustomerContract",
+						"Name": "PeriodEndDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerContractNote",
 					"Description": "A note, comment or additional information regarding the Customer's contract.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerContract.cdm.json/CustomerContract",
-						"Name": "CustomerContractNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -98,6 +94,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerContract.cdm.json/CustomerContract",
+						"Name": "CustomerContractNote"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -133,8 +133,7 @@
 			"Description": "The one or more Contracts specifying the terms, conditions and obligations of the Customer.",
 			"DisplayFolderInfo": "{\"name\":\"Customer\",\"colorCode\":\"#022F22\"}",
 			"PrimaryKeys": "CustomerId,ContractId,PeriodStartDate",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

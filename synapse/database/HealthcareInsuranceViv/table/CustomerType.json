@@ -16,10 +16,6 @@
 				{
 					"Name": "CustomerTypeId",
 					"Description": "The unique identifier of a Customer Type.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerType.cdm.json/CustomerType",
-						"Name": "CustomerTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerType.cdm.json/CustomerType",
+						"Name": "CustomerTypeId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerTypeName",
 					"Description": "The name of the Customer Type.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerType.cdm.json/CustomerType",
-						"Name": "CustomerTypeName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -46,15 +42,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerType.cdm.json/CustomerType",
+						"Name": "CustomerTypeName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerTypeDescription",
 					"Description": "The description of the Customer Type.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerType.cdm.json/CustomerType",
-						"Name": "CustomerTypeDescription"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -63,6 +59,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerType.cdm.json/CustomerType",
+						"Name": "CustomerTypeDescription"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -98,8 +98,7 @@
 			"Description": "A categorization of customers based upon common characteristics or similar criteria.\n\nEx:\n- Individual\n- Legal Entity",
 			"DisplayFolderInfo": "{\"name\":\"Customer\",\"colorCode\":\"#022F22\"}",
 			"PrimaryKeys": "CustomerTypeId",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

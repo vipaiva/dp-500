@@ -16,10 +16,6 @@
 				{
 					"Name": "PoNumber",
 					"Description": "The unique identifier of a Purchase Order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -29,15 +25,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoNumber"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoIssuedDate",
 					"Description": "The date that the Purchase Order was issued.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoIssuedDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -46,16 +42,16 @@
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoIssuedDate"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoExpirationDate",
 					"Description": "The expiration date of the Purchase Order after which it is invalid as an authorizing document.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoExpirationDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -64,16 +60,16 @@
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoExpirationDate"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAcknowledgementDate",
 					"Description": "The date that acceptance of a purchase order was received, which verifies the cost, description, quantity and ship date of goods ordered as well as special terms or conditions.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAcknowledgementDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -82,16 +78,16 @@
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAcknowledgementDate"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAcceptanceDate",
 					"Description": "The date that the purchase order was accepted, which verifies the cost, description, quantity and ship date of goods ordered as well as special terms or conditions.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAcceptanceDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -101,15 +97,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAcceptanceDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAmount",
 					"Description": "The total amount of products that the Purchase Order authorizes purchase of.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -119,16 +115,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoProductAmount",
 					"Description": "The total product value of the PO exclusive of taxes, freight and any other costs.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoProductAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -138,16 +134,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoProductAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoTaxAmount",
 					"Description": "The total tax due on the PO items.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoTaxAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -157,16 +153,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "decimal"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoTaxAmount"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoFreightAmount",
 					"Description": "The total amount of freight due for the PO items.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoFreightAmount"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -177,15 +173,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoFreightAmount"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "BlanketPoIndicator",
 					"Description": "An indicator or flag denoting the PO is a 'blanket PO' that may be used to fulfill multiple Requisitions.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "BlanketPoIndicator"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "boolean",
 						"IsComplexType": false,
@@ -194,15 +190,15 @@
 							"HIVE_TYPE_STRING": "boolean"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "BlanketPoIndicator"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipToName",
 					"Description": "The name of the person or organization that the PO items are to be shipped to (if different from the buyers).",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "ShipToName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -212,15 +208,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "ShipToName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ShipToLocationId",
 					"Description": "The unique identifier of a Location.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "ShipToLocationId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -229,15 +225,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "ShipToLocationId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoTrainingTerms",
 					"Description": "A statement describing the Training Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoTrainingTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -246,16 +242,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoTrainingTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoSupportTerms",
 					"Description": "A statement describing the Support Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoSupportTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -265,15 +261,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoSupportTerms"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoCreatedByName",
 					"Description": "The name of the person who created the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoCreatedByName"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -283,15 +279,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoCreatedByName"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoInstallationTerms",
 					"Description": "A statement describing the Installation Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoInstallationTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -300,16 +296,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoInstallationTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAcceptanceTerms",
 					"Description": "A statement describing the Acceptance Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAcceptanceTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -318,16 +314,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAcceptanceTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoSparePartsTerms",
 					"Description": "A statement describing the Spare Parts Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoSparePartsTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -336,16 +332,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoSparePartsTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoLicensesAndPermitsTerms",
 					"Description": "A statement describing the Licenses And Permits Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoLicensesAndPermitsTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -354,16 +350,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoLicensesAndPermitsTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoInsuranceTerms",
 					"Description": "A statement describing the Insurance Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoInsuranceTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -372,16 +368,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoInsuranceTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoTimeAndPenaltiesTerms",
 					"Description": "A statement describing the Time And Penalties Terms associated with acquisition of the associated Items under the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoTimeAndPenaltiesTerms"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -390,16 +386,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoTimeAndPenaltiesTerms"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAcceptanceSection",
 					"Description": "This section establishes what constitutes acceptance of the terms of the Purchase Order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAcceptanceSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -408,16 +404,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAcceptanceSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoDeliverySection",
 					"Description": "This section assigns to the buyer the right to cancel an order if it is not delivered by the date on the face of the purchase order.\n\nThis section also addresses the packing and shipping by the proper carrier of PO items.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoDeliverySection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -426,16 +422,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoDeliverySection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoPriceAndPaymentSection",
 					"Description": "This section establishes whether the states price included packing and transportation to the FOB point, the location where the buyer takes responsibility for the goods.\n\nFOB stands for \"Free On Board' - designating a point or location where seller must deliver goods to a carrier for shipment.   Typically the seller pays for delivering goods to the designated FOB location and the buyer bears responsibility for costs or losses to goods having reached the FOB point.\n\nThis section also establishes whether the buyer will pay any charges that are not shown on the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoPriceAndPaymentSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -444,16 +440,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoPriceAndPaymentSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoTerminationSection",
 					"Description": "This section establishes the terms and conditions under which the buyer can cancel an order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoTerminationSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -462,16 +458,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoTerminationSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoIntellectualPropertyRightsSection",
 					"Description": "This section specifies provisions to protect the buyer against any claims of unauthorized use or infringement that may result from the sale of the products or goods.   The Seller may be responsible for defending all claims brought against the buyer for infringement or unauthorized use of goods and may have to pay all damages that result from such claims.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoIntellectualPropertyRightsSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -480,16 +476,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoIntellectualPropertyRightsSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoQualityAssuranceSection",
 					"Description": "This section establishes how goods are sold - \"as is\", \"with warranty\", \"without warranty\".\n\nCertain warranties may be provided by law even though they are not states explicitly in the document.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoQualityAssuranceSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -498,16 +494,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoQualityAssuranceSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoDefectiveGoodsSection",
 					"Description": "This section establishes the buyers rights and remedies in case the goods do not conform to the terms and conditions of the Purchase Order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoDefectiveGoodsSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -516,16 +512,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoDefectiveGoodsSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoExcessGoodsSection",
 					"Description": "This section provides that goods shipped in excess of the amount ordered by the buyer will not be accepted and seller will bear risk, responsibility and expense for their return.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoExcessGoodsSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -534,16 +530,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoExcessGoodsSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoInspectionAndAcceptanceSection",
 					"Description": "This section establishes the buyer's right to inspect all goods and adjust those goods that do not conform to the terms of the Purchase Order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoInspectionAndAcceptanceSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -552,16 +548,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoInspectionAndAcceptanceSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoFabricationAndMaterialCommitmentSection",
 					"Description": "This section address the situation where the sale of goods is improperly canceled by a buyer and the seller may be entitled to damages.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoFabricationAndMaterialCommitmentSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -570,16 +566,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoFabricationAndMaterialCommitmentSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoLegalComplianceSection",
 					"Description": "This section is intended to demonstrate compliance with some state or federal law or regulation.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoLegalComplianceSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -588,16 +584,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoLegalComplianceSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoBuyersPropertySection",
 					"Description": "This section establishes protection for any property provided by the buyer to the seller for use in fulfilling the buyer's order.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoBuyersPropertySection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -606,16 +602,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoBuyersPropertySection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoTaxSection",
 					"Description": "This section provides that the purchase price of the goods does not include any sales taxes and that the seller must separately state applicable taxes on the seller's invoice.   Buyer remains responsible for paying any sales tax.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoTaxSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -624,16 +620,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoTaxSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoAssignmentSection",
 					"Description": "This section establishes that the seller may not transfer any rights or obligations related to the Purchase Order to anyone else without the buyer's prior consent.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoAssignmentSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -642,16 +638,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoAssignmentSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoRemediesSection",
 					"Description": "This section establishes how any dispute regarding the Purchase Order will be resolved and the legal remedies that may be sought by either party.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoRemediesSection"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -660,16 +656,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoRemediesSection"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PurchaseOrderStatusTypeId",
 					"Description": "The unique identifier of the PO Status.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PurchaseOrderStatusTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -677,16 +673,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PurchaseOrderStatusTypeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "RequisitionId",
 					"Description": "The unique identifier of the Requisition.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "RequisitionId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -695,15 +691,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "RequisitionId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PoServicesProcurementSpecification",
 					"Description": "A specification or description of the specifications or details regarding acquisition of services in relation to the PO.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PoServicesProcurementSpecification"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -713,15 +709,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PoServicesProcurementSpecification"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ResponsibilityCenterId",
 					"Description": "The unique identifier of a Responsibility Center.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "ResponsibilityCenterId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -729,16 +725,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "ResponsibilityCenterId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PurchaseOrderTypeId",
 					"Description": "The unique identifier of a Purchase Order Type.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "PurchaseOrderTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -746,16 +742,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "PurchaseOrderTypeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ContractId",
 					"Description": "The unique identifier of a Contract.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "ContractId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -764,15 +760,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "ContractId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "VendorId",
 					"Description": "The unique identifier of a Vendor.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "VendorId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -780,16 +776,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "VendorId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -797,16 +793,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "CustomerId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "DocumentId",
 					"Description": "The unique identifier of a Document.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "DocumentId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -815,15 +811,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "DocumentId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "IsoCurrencyCode",
 					"Description": "The ISO 4217 currency code.",
-					"BaseAttributeReference": {
-						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
-						"Name": "IsoCurrencyCode"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -832,6 +828,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PurchaseOrder.cdm.json/PurchaseOrder",
+						"Name": "IsoCurrencyCode"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -867,8 +867,7 @@
 			"Description": "Purchase orders are used in relatively simple transactions where minimal negotiations are required between the buyer and seller or where an existing agreement is in place. The seller states that products can be ordered with a purchase order.\n\nThe Purchase Order is an offer to the seller to contract on the terms offered and any such offer specifically limits acceptance by seller to the terms defined.\n\nA Purchase Order is a contract between the buyer and seller that specifies the items to be purchased, price and date that the goods or services will be delivered.  The PO may also contain terms of purchase (STANDARD TERMS & CONDITIONS), specifications and quality levels.   It is the legal agreement between the buyer and supplier and the reference point for measuring supplier performance.   Changes to the Purchase Order may be made several points, PO Change Order (PURCHASING), and must be maintained for audit purposes.",
 			"DisplayFolderInfo": "{\"name\":\"Purchasing\",\"colorCode\":\"#A33E2C\"}",
 			"PrimaryKeys": "PoNumber",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

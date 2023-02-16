@@ -16,10 +16,6 @@
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "CustomerId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "EmailTypeId",
 					"Description": "The unique identifier of an email type.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "EmailTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -45,15 +41,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "EmailTypeId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "EmailAddress",
 					"Description": "The Customer email address.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "EmailAddress"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -63,15 +59,15 @@
 							"HIVE_TYPE_STRING": "string"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "EmailAddress"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodStartTimestamp",
 					"Description": "The period start timestamp associated with the information.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "PeriodStartTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -81,15 +77,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "PeriodStartTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodEndTimestamp",
 					"Description": "The period end timestamp associated with the information.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "PeriodEndTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -99,15 +95,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "PeriodEndTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PreferenceId",
 					"Description": "The unique identifier of a Preference.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "PreferenceId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -116,15 +112,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "PreferenceId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerEmailNote",
 					"Description": "A note, comment or additional information regarding the customer email address.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
-						"Name": "CustomerEmailNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -133,6 +129,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerEmail.cdm.json/CustomerEmail",
+						"Name": "CustomerEmailNote"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -168,8 +168,7 @@
 			"Description": "The customer email address(s) of the associated email type for the indicated period.",
 			"DisplayFolderInfo": "{\"name\":\"Customer\",\"colorCode\":\"#022F22\"}",
 			"PrimaryKeys": "CustomerId,EmailTypeId,EmailAddress,PeriodStartTimestamp",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

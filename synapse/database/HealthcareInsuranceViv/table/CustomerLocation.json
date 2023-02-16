@@ -16,10 +16,6 @@
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "CustomerId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LocationTypeId",
 					"Description": "The unique identifier of a Location Type.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "LocationTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -44,16 +40,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "LocationTypeId"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LocationId",
 					"Description": "The unique identifier of a Location.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "LocationId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -62,15 +58,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "LocationId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodStartTimestamp",
 					"Description": "The period start timestamp associated with the information.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "PeriodStartTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -80,15 +76,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "PeriodStartTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PeriodEndTimestamp",
 					"Description": "The period end timestamp associated with the information.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "PeriodEndTimestamp"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "timestamp",
 						"IsComplexType": false,
@@ -98,15 +94,15 @@
 							"HIVE_TYPE_STRING": "timestamp"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "PeriodEndTimestamp"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "GlobalLocationNumber",
 					"Description": "The Global Location Number (GLN) is a simple tool used to uniquely identify locations. It can be used to identify physical locations such as a warehouse, legal entities, or a function / department within a legal entity. The GLN is part of the GS1 system of standards.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "GlobalLocationNumber"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "decimal",
 						"IsComplexType": false,
@@ -117,15 +113,15 @@
 							"HIVE_TYPE_STRING": "decimal"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "GlobalLocationNumber"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "PreferenceId",
 					"Description": "The unique identifier of a Preference.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "PreferenceId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -134,15 +130,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "PreferenceId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerLocationNote",
 					"Description": "A note, comment or additional information regarding a Customer Location.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
-						"Name": "CustomerLocationNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -151,6 +147,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerLocation.cdm.json/CustomerLocation",
+						"Name": "CustomerLocationNote"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -186,8 +186,7 @@
 			"Description": "The customer location(s) of the associated Location Type for the indicated period.",
 			"DisplayFolderInfo": "{\"name\":\"Customer\",\"colorCode\":\"#022F22\"}",
 			"PrimaryKeys": "CustomerId,LocationTypeId,LocationId,PeriodStartTimestamp",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,

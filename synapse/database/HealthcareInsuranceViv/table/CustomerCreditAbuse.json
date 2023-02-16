@@ -16,10 +16,6 @@
 				{
 					"Name": "CustomerId",
 					"Description": "The unique identifier of a Customer.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "CustomerId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "long",
 						"IsComplexType": false,
@@ -28,15 +24,15 @@
 							"HIVE_TYPE_STRING": "long"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "CustomerId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CreditAbuseTypeId",
 					"Description": "The unique identifier of a type of abuse.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "CreditAbuseTypeId"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
@@ -45,15 +41,15 @@
 							"HIVE_TYPE_STRING": "integer"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "CreditAbuseTypeId"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AbuseDate",
 					"Description": "The date of the abuse.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "AbuseDate"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "date",
 						"IsComplexType": false,
@@ -63,15 +59,15 @@
 							"HIVE_TYPE_STRING": "date"
 						}
 					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "AbuseDate"
+					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AbuseStatement",
 					"Description": "A statement describing the abuse.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "AbuseStatement"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -80,16 +76,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "AbuseStatement"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ActionStatement",
 					"Description": "A statement describing the action taken in response to the abuse.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "ActionStatement"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -98,16 +94,16 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "ActionStatement"
 					},
 					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "AbuseNote",
 					"Description": "A note, comment or additional information regarding the Abuse.",
-					"BaseAttributeReference": {
-						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
-						"Name": "AbuseNote"
-					},
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -116,6 +112,10 @@
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CustomerCreditAbuse.cdm.json/CustomerCreditAbuse",
+						"Name": "AbuseNote"
 					},
 					"DeltaFormatInvalidMessages": []
 				}
@@ -151,8 +151,7 @@
 			"Description": "Credit Abuse committed by a Customer.",
 			"DisplayFolderInfo": "{\"name\":\"Customer Credit & Collections\",\"colorCode\":\"#502006\"}",
 			"PrimaryKeys": "CustomerId,CreditAbuseTypeId,AbuseDate",
-			"spark.sql.sources.provider": "parquet",
-			"sql:IsAppendOnly": false
+			"spark.sql.sources.provider": "parquet"
 		},
 		"Retention": 0,
 		"Temporary": false,
