@@ -20,7 +20,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "6a6444e9-dd7e-4e21-a9fb-21ed29b3be03"
+				"spark.autotune.trackingId": "34be2fd8-bb77-4450-a33b-fc7656d0ab61"
 			}
 		},
 		"metadata": {
@@ -275,7 +275,10 @@
 					}
 				},
 				"source": [
-					"We can also apply grouping and mathematical operations like SUM. "
+					"We can also apply grouping and mathematical operations like SUM. \r\n",
+					"\r\n",
+					"\r\n",
+					"**Explore the info in the chart**"
 				]
 			},
 			{
@@ -303,10 +306,10 @@
 					"    SUM( (Quantity * UnitPrice) + ShippingCost ) AS TotalSalesPerDay\r\n",
 					"FROM Sales\r\n",
 					"GROUP BY OrderDate\r\n",
-					"ORDER BY TotalSalesPerDay DESC\r\n",
-					"LIMIT 5"
+					"ORDER BY OrderDate DESC\r\n",
+					"LIMIT 15"
 				],
-				"execution_count": 27
+				"execution_count": 33
 			},
 			{
 				"cell_type": "markdown",
