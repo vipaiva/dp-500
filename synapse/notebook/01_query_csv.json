@@ -20,7 +20,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "0ea657e0-a2e5-40ee-9806-b4a184205542"
+				"spark.autotune.trackingId": "6a6444e9-dd7e-4e21-a9fb-21ed29b3be03"
 			}
 		},
 		"metadata": {
@@ -82,7 +82,7 @@
 				"source": [
 					"datalake = 'datalake6oq3z6xmzhbbc'"
 				],
-				"execution_count": 1
+				"execution_count": 21
 			},
 			{
 				"cell_type": "markdown",
@@ -113,7 +113,7 @@
 					"df = spark.read.load('abfss://landing@' + datalake + '.dfs.core.windows.net/Allfiles/01/data/*.csv', format='csv', header=False)\r\n",
 					"display(df.limit(10))"
 				],
-				"execution_count": 3
+				"execution_count": 22
 			},
 			{
 				"cell_type": "markdown",
@@ -144,7 +144,7 @@
 				"source": [
 					"df.printSchema()"
 				],
-				"execution_count": 4
+				"execution_count": 23
 			},
 			{
 				"cell_type": "markdown",
@@ -193,7 +193,7 @@
 					"\r\n",
 					"display(df.limit(10))"
 				],
-				"execution_count": 5
+				"execution_count": 24
 			},
 			{
 				"cell_type": "markdown",
@@ -224,7 +224,7 @@
 				"source": [
 					"df.createOrReplaceTempView(\"sales\")"
 				],
-				"execution_count": 7
+				"execution_count": 25
 			},
 			{
 				"cell_type": "markdown",
@@ -263,7 +263,7 @@
 					"FROM SALES \r\n",
 					"WHERE Customer = 'Eduardo Perez'"
 				],
-				"execution_count": 10
+				"execution_count": 26
 			},
 			{
 				"cell_type": "markdown",
@@ -306,7 +306,7 @@
 					"ORDER BY TotalSalesPerDay DESC\r\n",
 					"LIMIT 5"
 				],
-				"execution_count": 14
+				"execution_count": 27
 			},
 			{
 				"cell_type": "markdown",
@@ -353,7 +353,7 @@
 					"GROUP BY OrderDate\r\n",
 					"ORDER BY OrderDate"
 				],
-				"execution_count": 15
+				"execution_count": 28
 			},
 			{
 				"cell_type": "markdown",
@@ -390,7 +390,7 @@
 					"\r\n",
 					"SELECT * FROM TotalSalesByDate LIMIT 5"
 				],
-				"execution_count": 16
+				"execution_count": 29
 			},
 			{
 				"cell_type": "markdown",
@@ -446,7 +446,7 @@
 					"# show the plot area\r\n",
 					"plt.show()"
 				],
-				"execution_count": 18
+				"execution_count": 30
 			},
 			{
 				"cell_type": "markdown",
@@ -503,7 +503,7 @@
 					"# display this html\r\n",
 					"displayHTML(h)"
 				],
-				"execution_count": 19
+				"execution_count": 31
 			}
 		]
 	}
