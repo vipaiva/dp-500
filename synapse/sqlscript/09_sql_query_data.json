@@ -1,0 +1,20 @@
+{
+	"name": "09_sql_query_data",
+	"properties": {
+		"folder": {
+			"name": "Module 03"
+		},
+		"content": {
+			"query": "\n--SELECT TOP 10 * FROM dbo.DimDate\n\nSELECT MIN(DateAltKey), MAX(DateAltKey) FROM dbo.DimDate\n\n--SELECT TOP 20 *  FROM [dbo].[TopPurchases]\n\n\nSELECT  dates.CalendarYear,\n        dates.CalendarQuarter,\n        SUM(sales.quantity * sales.UnitPrice) AS TotalSales\nFROM dbo.TopPurchases AS sales\nJOIN dbo.DimDate AS dates ON sales.OrderDate = dates.DateAltKey\nGROUP BY dates.CalendarYear, dates.CalendarQuarter\nORDER BY dates.CalendarYear, dates.CalendarQuarter;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "DP500DWH",
+				"poolName": "DP500DWH"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
