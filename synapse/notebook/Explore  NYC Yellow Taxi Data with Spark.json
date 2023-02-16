@@ -1,6 +1,9 @@
 {
 	"name": "Explore  NYC Yellow Taxi Data with Spark",
 	"properties": {
+		"folder": {
+			"name": "Module 01"
+		},
 		"nbformat": 4,
 		"nbformat_minor": 2,
 		"bigDataPool": {
@@ -17,7 +20,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "b4494315-95dc-45e6-98ac-f18b9c815e1d"
+				"spark.autotune.trackingId": "cf5233c4-2b45-42d0-8d1a-13b6757d3d3c"
 			}
 		},
 		"metadata": {
@@ -96,7 +99,7 @@
 				"source": [
 					"df_nyc_tlc.printSchema()"
 				],
-				"execution_count": null
+				"execution_count": 2
 			},
 			{
 				"cell_type": "code",
@@ -130,7 +133,7 @@
 					"df_nyc = df_nyc_tlc.groupBy(\"passengerCount\").agg(F.avg('tripDistance').alias('AvgTripDistance'), F.sum('tripDistance').alias('SumTripDistance'))\n",
 					"display(df_nyc)"
 				],
-				"execution_count": null
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -153,7 +156,7 @@
 					"seaborn.lineplot(x=\"passengerCount\", y=\"AvgTripDistance\" , data = pdf_nyc)\n",
 					"matplotlib.pyplot.show()"
 				],
-				"execution_count": null
+				"execution_count": 4
 			},
 			{
 				"cell_type": "markdown",
@@ -185,7 +188,7 @@
 					"spark.sql(\"CREATE DATABASE IF NOT EXISTS NYCAggregates\")\r\n",
 					"df_nyc.write.mode(\"overwrite\").saveAsTable(\"NYCAggregates.PassangerCountAggregates\")"
 				],
-				"execution_count": null
+				"execution_count": 5
 			},
 			{
 				"cell_type": "markdown",

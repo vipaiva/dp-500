@@ -1,6 +1,9 @@
 {
 	"name": "QueryCovidData",
 	"properties": {
+		"folder": {
+			"name": "Module 01"
+		},
 		"content": {
 			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK     'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet',\n        FORMAT = 'parquet'\n    ) AS [result];\n\n\n\n\nSELECT\n    country_region as Region, AVG(Confirmed_change) as AverageDailyConfirmedCases, AVG(Deaths_change) as AverageDailyDeaths\nFROM\n    OPENROWSET(\n        BULK     'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet',\n        FORMAT = 'parquet'\n    ) AS [result]\n    GROUP BY country_region\n    order by AverageDailyConfirmedCases desc\n    ",
 			"metadata": {
