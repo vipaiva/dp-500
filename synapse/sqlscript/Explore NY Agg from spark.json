@@ -1,6 +1,9 @@
 {
 	"name": "Explore NY Agg from spark",
 	"properties": {
+		"folder": {
+			"name": "Module 01"
+		},
 		"content": {
 			"query": "SELECT TOP (100) [passengerCount]\n,[AvgTripDistance]\n,[SumTripDistance]\n FROM [nycaggregates].[dbo].[passangercountaggregates]",
 			"metadata": {
