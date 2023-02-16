@@ -20,7 +20,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "610e945f-867a-4a6c-980f-58100228665b"
+				"spark.autotune.trackingId": "0ea657e0-a2e5-40ee-9806-b4a184205542"
 			}
 		},
 		"metadata": {
@@ -34,12 +34,19 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-500-platform/providers/Microsoft.Synapse/workspaces/synapse-cn32xts6vteh6/bigDataPools/synapsespark",
+				"id": "/subscriptions/073a4913-dc63-46b9-b676-fad837dab1ba/resourceGroups/rg-dp-500-platform/providers/Microsoft.Synapse/workspaces/synapse-6oq3z6xmzhbbc/bigDataPools/synapsespark",
 				"name": "synapsespark",
+				"type": "Spark",
+				"endpoint": "https://synapse-6oq3z6xmzhbbc.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/synapsespark",
 				"auth": {
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
-				}
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -75,7 +82,7 @@
 				"source": [
 					"datalake = 'datalake6oq3z6xmzhbbc'"
 				],
-				"execution_count": 3
+				"execution_count": 1
 			},
 			{
 				"cell_type": "markdown",
@@ -106,7 +113,7 @@
 					"df = spark.read.load('abfss://landing@' + datalake + '.dfs.core.windows.net/Allfiles/01/data/*.csv', format='csv', header=False)\r\n",
 					"display(df.limit(10))"
 				],
-				"execution_count": 4
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -137,7 +144,7 @@
 				"source": [
 					"df.printSchema()"
 				],
-				"execution_count": 5
+				"execution_count": 4
 			},
 			{
 				"cell_type": "markdown",
@@ -186,7 +193,7 @@
 					"\r\n",
 					"display(df.limit(10))"
 				],
-				"execution_count": 6
+				"execution_count": 5
 			},
 			{
 				"cell_type": "markdown",
@@ -254,9 +261,9 @@
 					"\r\n",
 					"SELECT * \r\n",
 					"FROM SALES \r\n",
-					"WHERE Customer LIKE 'E%'"
+					"WHERE Customer = 'Eduardo Perez'"
 				],
-				"execution_count": 8
+				"execution_count": 10
 			},
 			{
 				"cell_type": "markdown",
@@ -293,13 +300,13 @@
 					"\r\n",
 					"SELECT \r\n",
 					"    OrderDate,\r\n",
-					"    SUM( (Quantity * UnitPrice) + ShippingCost ) AS TotalSales\r\n",
+					"    SUM( (Quantity * UnitPrice) + ShippingCost ) AS TotalSalesPerDay\r\n",
 					"FROM Sales\r\n",
 					"GROUP BY OrderDate\r\n",
-					"ORDER BY OrderDate\r\n",
-					"LIMIT 50"
+					"ORDER BY TotalSalesPerDay DESC\r\n",
+					"LIMIT 5"
 				],
-				"execution_count": 9
+				"execution_count": 14
 			},
 			{
 				"cell_type": "markdown",
@@ -346,7 +353,7 @@
 					"GROUP BY OrderDate\r\n",
 					"ORDER BY OrderDate"
 				],
-				"execution_count": 10
+				"execution_count": 15
 			},
 			{
 				"cell_type": "markdown",
@@ -381,9 +388,9 @@
 				"source": [
 					"%%sql\r\n",
 					"\r\n",
-					"SELECT * FROM TotalSalesByDate LIMIT 10"
+					"SELECT * FROM TotalSalesByDate LIMIT 5"
 				],
-				"execution_count": 11
+				"execution_count": 16
 			},
 			{
 				"cell_type": "markdown",
@@ -395,7 +402,9 @@
 					}
 				},
 				"source": [
-					"Lets create some chart using matplotlib"
+					"Lets create some chart using matplotlib\r\n",
+					"\r\n",
+					"**Order count by sales territory**"
 				]
 			},
 			{
@@ -437,7 +446,22 @@
 					"# show the plot area\r\n",
 					"plt.show()"
 				],
-				"execution_count": null
+				"execution_count": 18
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Let's create a map in using matplotlib\r\n",
+					"\r\n",
+					"Unemployment rate in the USA"
+				]
 			},
 			{
 				"cell_type": "code",
@@ -479,7 +503,7 @@
 					"# display this html\r\n",
 					"displayHTML(h)"
 				],
-				"execution_count": null
+				"execution_count": 19
 			}
 		]
 	}
