@@ -1,0 +1,26 @@
+{
+	"name": "relationship-hdkkoacago",
+	"properties": {
+		"Name": "relationship-hdkkoacago",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "HealthcareInsuranceViv"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "CustomerType",
+		"ToTableName": "Customer",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CustomerTypeId",
+				"ToColumnName": "CustomerTypeId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"CustomerType.cdm.json/CustomerType\",\"toEntity\":\"Customer.cdm.json/Customer\",\"joinPairs\":[{\"fromAttribute\":\"CustomerTypeId\",\"toAttribute\":\"CustomerTypeId\"}]}}"
+		}
+	},
+	"type": "RELATIONSHIP"
+}
