@@ -1,6 +1,9 @@
 {
 	"name": "09_sql_date_dimension_query",
 	"properties": {
+		"folder": {
+			"name": "Module 03"
+		},
 		"content": {
 			"query": " SELECT MIN(DateAltKey), MAX(DateAltKey)  FROM [dbo].[DimDate]\n\n\n",
 			"metadata": {
